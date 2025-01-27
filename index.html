@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DeepSeekManager: AI Model Management and Execution on Termux & Raspberry Pi">
+    <title>DeepSeekManager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">DeepSeekManager</a>
+            </div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h1>Manage and Run DeepSeek AI Models Effortlessly</h1>
+            <p>Deploy powerful AI models like DeepSeek on your Android (Termux) or Raspberry Pi with ease.</p>
+            <a href="#installation" class="cta-button">Get Started</a>
+        </section>
+    </header>
+
+    <section id="features" class="features-section">
+        <div class="feature">
+            <h2>Auto Installation</h2>
+            <p>Install all necessary dependencies and DeepSeek models with a single script.</p>
+        </div>
+        <div class="feature">
+            <h2>Cross-Platform Support</h2>
+            <p>Supports both **Termux (Android)** and **Raspberry Pi** (Raspbian OS) environments.</p>
+        </div>
+        <div class="feature">
+            <h2>Model Management</h2>
+            <p>Choose, pull, and run DeepSeek models with ease through an interactive menu.</p>
+        </div>
+    </section>
+
+    <section id="installation" class="installation-section">
+        <h2>Installation Guide</h2>
+        <p>Follow these simple steps to get DeepSeekManager up and running:</p>
+        <div class="installation-steps">
+            <div class="step">
+                <h3>For Termux (Android)</h3>
+                <pre><code>pkg install git cmake golang libjpeg-turbo</code></pre>
+                <p>Clone the repository and run the installation script:</p>
+                <pre><code>git clone https://github.com/<your-username>/DeepSeekManager.git
+cd DeepSeekManager
+bash deepseek_manager_termux.sh</code></pre>
+            </div>
+            <div class="step">
+                <h3>For Raspberry Pi</h3>
+                <pre><code>sudo apt install git cmake golang libjpeg-turbo</code></pre>
+                <p>Clone the repository and run the installation script:</p>
+                <pre><code>git clone https://github.com/<your-username>/DeepSeekManager.git
+cd DeepSeekManager
+bash deepseek_manager_rpi.sh</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to open an issue on GitHub or reach out to me.</p>
+        <p>GitHub: <a href="https://github.com/<your-username>" target="_blank">@<your-username></a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DeepSeekManager. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
