@@ -1,157 +1,195 @@
-/* Reset and global styles */
+/* Resetting default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-header {
-    background: #1e1e1e;
-    color: white;
-    padding: 2rem 0;
-}
-
-nav {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 20px 50px;
+    background-color: #1f1f1f;
 }
 
-nav .logo a {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #f4f4f4;
+.navbar .logo a {
+    color: #ff9800;
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav ul {
+.navbar .logo a:hover {
+    color: #ff5722;
+}
+
+.nav-links {
     display: flex;
-    gap: 2rem;
+    list-style: none;
 }
 
-nav ul li a {
-    color: white;
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    font-size: 1.1em;
+    text-transform: uppercase;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
 .hero {
+    padding: 80px 20px;
     text-align: center;
-    padding: 4rem 2rem;
+    background-color: #333;
+    color: white;
+    animation: fadeIn 1s ease-out;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    background-color: #28a745;
-    padding: 1rem 2rem;
+    padding: 15px 30px;
+    background-color: #ff9800;
     color: white;
-    font-weight: bold;
     border-radius: 5px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #218838;
+    background-color: #f57c00;
 }
 
 /* Features Section */
 .features-section {
     display: flex;
     justify-content: space-around;
-    padding: 4rem 2rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
+    padding: 50px 20px;
+    background-color: #2d2d2d;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .feature {
+    background-color: #3a3a3a;
+    padding: 20px;
+    width: 30%;
     text-align: center;
-    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
 }
 
 .feature h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #bbb;
 }
 
 /* Installation Section */
 .installation-section {
-    background-color: #f9f9f9;
-    padding: 4rem 2rem;
+    padding: 60px 20px;
     text-align: center;
+    background-color: #121212;
+    animation: fadeIn 2s ease-out;
 }
 
 .installation-steps {
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .step {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #3a3a3a;
+    padding: 20px;
     width: 45%;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-.step pre {
-    background-color: #282828;
-    color: white;
-    padding: 1rem;
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.step pre code {
+    font-size: 1.2em;
+    background-color: #212121;
+    padding: 12px;
     border-radius: 5px;
-    margin-top: 1rem;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    display: block;
+    margin-top: 10px;
 }
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 2rem;
+    padding: 60px 20px;
     text-align: center;
-    background-color: #1e1e1e;
+    background-color: #333;
     color: white;
-}
-
-.contact-section p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
 }
 
 .contact-section a {
-    color: #28a745;
+    color: #ff9800;
+    font-weight: bold;
 }
 
-/* Footer */
 footer {
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: #bbb;
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
-footer p {
-    font-size: 1rem;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
