@@ -109,7 +109,7 @@ Ensure the following are installed:
 
 ## **Support**
 For additional support or updates, visit the [GitHub repository](https://github.com/sudo-xda/DeepSeekManager).
-```
+
 
 
 
